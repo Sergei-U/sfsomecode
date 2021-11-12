@@ -1,11 +1,11 @@
-package main.java.practicleweek2;
+package practicleweek2;
 
-public class Teacher extends People{
+public class Teacher extends People {
     private String subject;
 
     public Teacher(String name, int age, String profession, String subject) {
         super(name, age, profession);
-        this.subject=subject;
+        this.subject = subject;
     }
 
     @Override
@@ -26,5 +26,8 @@ public class Teacher extends People{
     public String getSubject() {
         return subject;
     }
-    public String giveALesson() {return "The lesson was ended";}
+
+    public String giveALesson() {
+        return "The lesson was ended";
+    }
 }

@@ -2,7 +2,7 @@ package main.java.module732;
 
 public class Main {
 
-    
+
     public static void main(String[] args) {
 /*
 
@@ -16,7 +16,7 @@ Fix class Zombie and ...
         battle.add(new Human("Vasiliy"));
         battle.add(new GiantSnake("Kaa"));
         battle.add(new Tower("Big Ben"));
-        
+
         battle.start();
 
        
@@ -26,5 +26,5 @@ Fix class Zombie and ...
 
 */
     }
-    
+
 }

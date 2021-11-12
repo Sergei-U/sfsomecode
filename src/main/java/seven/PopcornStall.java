@@ -1,7 +1,7 @@
 package main.java.seven;
 
-public class PopcornStall{
-    public void print(){
+public class PopcornStall {
+    public void print() {
         System.out.println(this);
     }
 

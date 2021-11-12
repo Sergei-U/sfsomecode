@@ -5,7 +5,7 @@ public class Dog extends Animal {
         System.out.println(this);
     }
 
-    public String toString(){
+    public String toString() {
         return "I am a Dog";
     }
 }

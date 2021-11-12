@@ -1,6 +1,7 @@
 package main.java.ALXNDR95.Collection;
 
-import java.util.*;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 public class Carriage implements Comparable<Carriage> {
     private final String type;

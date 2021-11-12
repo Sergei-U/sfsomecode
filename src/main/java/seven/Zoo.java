@@ -3,7 +3,7 @@ package main.java.seven;
 import java.util.Arrays;
 
 public class Zoo {
-    
+
     // Override toString here...
 
 
@@ -28,7 +28,7 @@ public class Zoo {
             System.out.println(a);
         }
     }
-    
+
     public void change(Object a, int i) {
         if (i >= 0 && i < objects.length)
             objects[i] = a;

@@ -6,6 +6,7 @@ public class Main1 {
     public static void main(String[] args) {
 
     }
+
     private static void binarySearch(int[] sortArr, int start, int end) {
         Scanner scanner = new Scanner(System.in);
         int position = (end + start) / 2;

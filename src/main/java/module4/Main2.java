@@ -11,8 +11,8 @@ public class Main2 {
         String text = "abba adca abea";
         Pattern pattern = Pattern.compile("a..a");
         Matcher matcher = pattern.matcher(text);
-        
-        while (matcher.find()){
+
+        while (matcher.find()) {
             System.out.println(text.substring(matcher.start(), matcher.end()));
         }
     }

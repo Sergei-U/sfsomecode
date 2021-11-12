@@ -6,7 +6,6 @@ public class StarSystem {
     private Long age;
 
 
-
     public StarSystem(String starName, int quantityOfPlanets, Long age) {
         this.starName = starName;
         this.quantityOfPlanets = quantityOfPlanets;
@@ -14,7 +13,7 @@ public class StarSystem {
     }
 
     public String getInfo(String starName, int quantityOfPlanets, Long age) {
-        return starName+" "+quantityOfPlanets+" "+age;
+        return starName + " " + quantityOfPlanets + " " + age;
     }
 
     public String getStarName() {

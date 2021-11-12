@@ -62,8 +62,8 @@ which add to the beginning of the line two astericks ("** ... **")
         //CoolPrinter.print(/*pass anonymous Formatter here*/);
         //TODO
 
-        CoolPrinter.print(new Formatter(){
-            public String format(String s){
+        CoolPrinter.print(new Formatter() {
+            public String format(String s) {
                 return "** " + s + " **";
             }
         });

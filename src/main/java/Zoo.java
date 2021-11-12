@@ -1,13 +1,13 @@
 package main.java;
 
-import main.java.seven.Reptile;
 import main.java.seven.Cat;
+import main.java.seven.Reptile;
 
 public class Zoo {
-    
+
     // Override toString here...
-    
-    
+
+
     Object[] objects;
 
     public Zoo() {
@@ -23,7 +23,7 @@ public class Zoo {
             System.out.println(a);
         }
     }
-    
+
     public void change(Object a, int i) {
         if (i >= 0 && i < objects.length)
             objects[i] = a;

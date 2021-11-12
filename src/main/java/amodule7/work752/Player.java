@@ -1,18 +1,20 @@
 package main.java.amodule7.work752;
 
-public class Player extends Human{
+public class Player extends Human {
 
-    class Backpack{
+    class Backpack {
         private String staff = "";
-        void put(String thing){
-            staff += thing +",";
+
+        void put(String thing) {
+            staff += thing + ",";
         }
-        public String toString(){
+
+        public String toString() {
             if (staff.equals("")) {
                 return "the backpack is empty";
             }
             System.out.println(staff.length());
-            return staff.substring(0, staff.length()-1) + " in the backpack";
+            return staff.substring(0, staff.length() - 1) + " in the backpack";
 
         }
     }
@@ -24,7 +26,7 @@ public class Player extends Human{
         backpack = new Backpack();
     }
 
-    public void take(String thing){
+    public void take(String thing) {
         backpack.put(thing);
     }
 

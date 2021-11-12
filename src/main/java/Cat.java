@@ -52,6 +52,7 @@ public class Cat {
     public class PedigreeCat extends Cat {
         private String breed;
         Cat barsik = new Cat("Barsik", 100, "Vasya");
+
         public String getBreed() {
             return breed;
         }
@@ -60,7 +61,7 @@ public class Cat {
             this.breed = breed;
         }
 
-        public PedigreeCat (String name, int age, String owner, String breed) {
+        public PedigreeCat(String name, int age, String owner, String breed) {
             super(name, age, owner);
             this.breed = breed;
         }

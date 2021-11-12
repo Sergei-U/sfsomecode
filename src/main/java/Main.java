@@ -2,7 +2,7 @@ package main.java;
 
 public class Main {
 
-    
+
     public static void main(String[] args) {
 /*
 Make (add code to class Tank),
@@ -35,5 +35,5 @@ The Tank is at 220, 30 now.
 
 */
     }
-    
+
 }

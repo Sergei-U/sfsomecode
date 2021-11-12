@@ -1,4 +1,4 @@
-package main.java.module6;
+package module6;
 
 public abstract class Vector {
     int x1, y1, z1, x2, y2, z2;
@@ -13,6 +13,7 @@ public abstract class Vector {
     }
 
     public abstract double getLength();
+
     abstract String getVectorCords();
 }
 
@@ -26,19 +27,22 @@ class Vector2D extends Vector {
     public double getLength() {
         return Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2));
     }
+
     @Override
     String getVectorCords() {
         return (x2 - x1) + " " + (y2 - y1);
     }
+
     double getScalarProduct(Vector2D vector2D) {
         String cords = getVectorCords();
         String cords2 = vector2D.getVectorCords();
         return Integer.parseInt(cords.split(" ")[0]) * Integer.parseInt(cords2.split(" ")[0]) * Integer.parseInt(cords2.split(" ")[1]) * Integer.parseInt(cords.split(" ")[1]);
     }
+
     double getAngle(Vector2D vector2D) {
         if (getLength() != 0 && vector2D.getLength() != 0) {
-            return getScalarProduct(vector2D)/(this.getLength() * vector2D.getLength());
-        } else return - 2.0;
+            return getScalarProduct(vector2D) / (this.getLength() * vector2D.getLength());
+        } else return -2.0;
     }
 }
 
@@ -51,18 +55,19 @@ class Vector3D extends Vector {
 
     @Override
     public double getLength() {
-
         return Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2) + Math.pow(z1 - z2, 2));
     }
+
     @Override
     public String getVectorCords() {
         return (x2 - x1) + " " + (y2 - y1) + " " + (z2 - z1);
     }
+
     double getScalarProduct(Vector3D vector3D) {
         String cords = getVectorCords();
         String cords2 = vector3D.getVectorCords();
         int a = Integer.parseInt(cords.split(" ")[0]) * Integer.parseInt(cords2.split(" ")[0]);
-        int b = Integer.parseInt(cords2.split(" ")[1]) * Integer.parseInt(cords.split(" ")[1]);
+        int b = Integer.parseInt(cords.split(" ")[1]) * Integer.parseInt(cords2.split(" ")[1]);
         int c = Integer.parseInt(cords.split(" ")[2]) * Integer.parseInt(cords2.split(" ")[2]);
         return a + b + c;
     }

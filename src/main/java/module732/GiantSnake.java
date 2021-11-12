@@ -1,11 +1,11 @@
 package main.java.module732;
 
-public class GiantSnake extends Monster implements Fighter{
-    
+public class GiantSnake extends Monster implements Fighter {
+
     public static String scream = "Ssssss";
-    
+
     public GiantSnake(String name) {
-        super(name + " the GiantSnake",5);
+        super(name + " the GiantSnake", 5);
     }
 
     @Override
@@ -15,7 +15,7 @@ public class GiantSnake extends Monster implements Fighter{
     }
 
 
-    public void growl(){
+    public void growl() {
         System.out.println(scream);
     }
 

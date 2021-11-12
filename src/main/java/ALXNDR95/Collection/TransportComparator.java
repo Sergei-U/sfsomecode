@@ -10,8 +10,7 @@ public class TransportComparator implements Comparator<Transport> {
         }
         if (t1.getSpeed() > t2.getSpeed()) {
             return 1;
-        }
-        else {
+        } else {
             return -1;
         }
     }

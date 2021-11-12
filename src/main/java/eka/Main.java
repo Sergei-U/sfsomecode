@@ -10,11 +10,11 @@ public class Main {
     public static void main(String[] args) {
 
         //переменные метода
-       int b =  6;
-       int c = 8;
+        int b = 6;
+        int c = 8;
 
-        System.out.println("Переменные класса i:"+i+"a"+a);
-        System.out.println("Переменные метода b:"+b+"c"+c);
+        System.out.println("Переменные класса i:" + i + "a" + a);
+        System.out.println("Переменные метода b:" + b + "c" + c);
         int resultClass = i + a;
         System.out.println(resultClass);
         int resultMethod = b + c;

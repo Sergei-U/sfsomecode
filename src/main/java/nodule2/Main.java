@@ -1,4 +1,4 @@
-package main.java.nodule2;
+package nodule2;
 
 public class Main {
     public static void main(String[] args) {

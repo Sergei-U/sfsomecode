@@ -1,0 +1,5 @@
+Crab sticks;10;30.00
+Cips;2;54.90
+Apple;1;45.90
+Pineapple;2;50.00
+Meat;1;495.70

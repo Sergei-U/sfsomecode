@@ -1,10 +1,10 @@
-package main.java.module12;
+package module12;
 
 public class Main {
-    
+
     // Lunch the show() method from the class Advertisement
     // (it's hidden) in a new Thread
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         //v1
         Thread thread = new Thread(new Runnable() {
@@ -20,5 +20,5 @@ public class Main {
         new Thread(Advertisement::show).start();
     }
 
- 
+
 }   

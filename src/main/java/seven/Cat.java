@@ -1,6 +1,6 @@
 package main.java.seven;
 
-public class Cat extends Animal{
+public class Cat extends Animal {
     public void print() {
         System.out.println(this);
     }
