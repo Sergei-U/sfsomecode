@@ -1,4 +1,4 @@
-package main.java.eka;
+package eka;
 
 public class Main {
 
