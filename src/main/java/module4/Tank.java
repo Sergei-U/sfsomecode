@@ -1,7 +1,6 @@
-package main.java;
+package module4;
 
-public class tt {
-    public class Tank {
+ public class Tank {
         int x, y;
         int dir;
         int fuel;
@@ -59,4 +58,3 @@ public class tt {
             goForward(-i);
         }
     }
-}

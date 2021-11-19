@@ -1,5 +1,7 @@
 package main.java;
 
+import module4.Tank;
+
 public class Main {
 
 
@@ -10,11 +12,11 @@ with fuel and different constructors
 */
 
         // At (0;0) fuel=100 
-        Tank justTank = new Tank();
+        module4.Tank justTank = new module4.Tank();
         // At (10;20) fuel=100 
-        Tank anywareTank = new Tank(10, 10);
+        module4.Tank anywareTank = new module4.Tank(10, 10);
         // At (20;30) fuel=200
-        Tank customTank = new Tank(20, 30, 200);
+        module4.Tank customTank = new Tank(20, 30, 200);
         justTank.goForward(200);
         justTank.printPosition();
         anywareTank.goBackward(-200);
@@ -22,9 +24,6 @@ with fuel and different constructors
         customTank.goForward(201);
         customTank.printPosition();
 
-
-        Object[] objects = new Object[3];
-        objects[0] = new Cat("name", 12, "toname");
        
 /* 
 This fragment of code has to output 
