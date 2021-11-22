@@ -1,4 +1,4 @@
-package main.java.seven;
+package seven;
 
 public class Reptile extends Animal {
     public void print() {

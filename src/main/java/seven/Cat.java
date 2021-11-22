@@ -1,4 +1,4 @@
-package main.java.seven;
+package seven;
 
 public class Cat extends Animal {
     public void print() {

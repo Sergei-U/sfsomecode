@@ -1,4 +1,4 @@
-package main.java.seven;
+package seven;
 
 import java.util.Arrays;
 
