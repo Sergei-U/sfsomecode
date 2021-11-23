@@ -1,10 +1,11 @@
-package main.java;
+package tank;
 
-public class Tank {
+class Tank {
 
-    int x, y;
-    int dir;
-    int fuel;
+    private int x;
+    private int y;
+    private int dir;
+    private int fuel;
 
     public Tank() {
         this(0, 0, 100);
@@ -21,14 +22,12 @@ public class Tank {
     }
 
     public void goForward(int i) {
-        if (i < 0 && -i > fuel)
+        if (i < 0 && -i > -fuel)
             i = -fuel;
         else if (i > fuel)
             i = fuel;
-        if (dir == 0) x += i;
-        else if (dir == 1) y += i;
-        else if (dir == 2) x -= i;
-        else y -= i;
+        if (dir % 2 == 0) x += i;
+        else y += i;
         fuel -= Math.abs(i);
     }
 
