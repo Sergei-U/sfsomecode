@@ -3,9 +3,8 @@ package module9.dopp7;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.util.ArrayList;
-import java.util.Scanner;
 import java.io.IOException;
+import java.util.Scanner;
 public class Solution {
     public void dance() throws IOException {
             int linesCount=0;
