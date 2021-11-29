@@ -1,4 +1,4 @@
-package main.java.module732;
+package module732;
 
 public interface Fighter {
     default void attack(Entity entity) {

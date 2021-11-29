@@ -1,4 +1,4 @@
-package main.java.module732;
+package module732;
 
 public abstract class Monster extends Entity implements Fighter {
     private String name;

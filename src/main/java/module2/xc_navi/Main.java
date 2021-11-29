@@ -22,11 +22,11 @@ public class Main {
             operation = scanner.next().charAt(0);
             if (operation == 's') {
                 break;
-            } else if (operation == 'C'){x=0;
+            } else if (operation == 'C') {
+                x = 0;
                 System.out.println("Enter Number1");
                 operand1 = scanner.nextDouble(); //считывает число
-            }
-            else{
+            } else {
                 System.out.println("Enter Number2");
                 double operand2 = scanner.nextDouble(); //считывает число
                 if (operation == '/' && operand2 == 0) {
@@ -40,6 +40,5 @@ public class Main {
                 }
             }
         }
-
     }
 }

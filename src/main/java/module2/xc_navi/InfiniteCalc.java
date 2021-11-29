@@ -1,7 +1,5 @@
 package module2.xc_navi;
 
-import java.util.Scanner;
-
 public class InfiniteCalc {
 
     double x = 0;
@@ -10,9 +8,7 @@ public class InfiniteCalc {
         if (operation == 's') {
             return 0;
         } else {
-
             switch (operation) {
-
                 case '-':
                     x = operand1 - operand2;
                     break;
@@ -33,12 +29,8 @@ public class InfiniteCalc {
                 default:
                     break;
             }
-
-
             return x;
         }
-
-
     }
 }
 

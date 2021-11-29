@@ -1,4 +1,4 @@
-package main.java.module732;
+package module732;
 
 public class Main {
 
