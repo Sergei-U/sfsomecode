@@ -46,6 +46,9 @@ public class King extends ChessPiece {
         } else return false;
     }
 
+
+
+
     public boolean checkPos(int pos) {
         return pos >= 0 && pos <= 7;
     }
