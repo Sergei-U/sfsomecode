@@ -5,41 +5,43 @@ import java.util.Scanner;
 public class Main {
 
     public static ChessBoard buildBoard() {
-        ChessBoard board = new ChessBoard("White");
+        String white = "White";
+        String black = "Black";
+        ChessBoard board = new ChessBoard(white);
 
-        board.board[0][0] = new Rook("White");
-        board.board[0][1] = new Horse("White");
-        board.board[0][2] = new Bishop("White");
-        board.board[0][3] = new Queen("White");
-        board.board[0][4] = new King("White");
-        board.board[0][5] = new Bishop("White");
-        board.board[0][6] = new Horse("White");
-        board.board[0][7] = new Rook("White");
-        board.board[1][0] = new Pawn("White");
-        board.board[1][1] = new Pawn("White");
-        board.board[1][2] = new Pawn("White");
-        board.board[1][3] = new Pawn("White");
-        board.board[1][4] = new Pawn("White");
-        board.board[1][5] = new Pawn("White");
-        board.board[1][6] = new Pawn("White");
-        board.board[1][7] = new Pawn("White");
+        board.board[0][0] = new Rook(white);
+        board.board[0][1] = new Horse(white);
+        board.board[0][2] = new Bishop(white);
+        board.board[0][3] = new Queen(white);
+        board.board[0][4] = new King(white);
+        board.board[0][5] = new Bishop(white);
+        board.board[0][6] = new Horse(white);
+        board.board[0][7] = new Rook(white);
+        board.board[1][0] = new Pawn(white);
+        board.board[1][1] = new Pawn(white);
+        board.board[1][2] = new Pawn(white);
+        board.board[1][3] = new Pawn(white);
+        board.board[1][4] = new Pawn(white);
+        board.board[1][5] = new Pawn(white);
+        board.board[1][6] = new Pawn(white);
+        board.board[1][7] = new Pawn(white);
 
-        board.board[7][0] = new Rook("Black");
-        board.board[7][1] = new Horse("Black");
-        board.board[7][2] = new Bishop("Black");
-        board.board[7][3] = new Queen("Black");
-        board.board[7][4] = new King("Black");
-        board.board[7][5] = new Bishop("Black");
-        board.board[7][6] = new Horse("Black");
-        board.board[7][7] = new Rook("Black");
-        board.board[6][0] = new Pawn("Black");
-        board.board[6][1] = new Pawn("Black");
-        board.board[6][2] = new Pawn("Black");
-        board.board[6][3] = new Pawn("Black");
-        board.board[6][4] = new Pawn("Black");
-        board.board[6][5] = new Pawn("Black");
-        board.board[6][6] = new Pawn("Black");
-        board.board[6][7] = new Pawn("Black");
+        board.board[7][0] = new Rook(black);
+        board.board[7][1] = new Horse(black);
+        board.board[7][2] = new Bishop(black);
+        board.board[7][3] = new Queen(black);
+        board.board[7][4] = new King(black);
+        board.board[7][5] = new Bishop(black);
+        board.board[7][6] = new Horse(black);
+        board.board[7][7] = new Rook(black);
+        board.board[6][0] = new Pawn(black);
+        board.board[6][1] = new Pawn(black);
+        board.board[6][2] = new Pawn(black);
+        board.board[6][3] = new Pawn(black);
+        board.board[6][4] = new Pawn(black);
+        board.board[6][5] = new Pawn(black);
+        board.board[6][6] = new Pawn(black);
+        board.board[6][7] = new Pawn(black);
         return board;
     }
 

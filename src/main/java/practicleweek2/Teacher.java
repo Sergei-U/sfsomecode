@@ -30,4 +30,6 @@ public class Teacher extends People {
     public String giveALesson() {
         return "The lesson was ended";
     }
+
+
 }

@@ -1,7 +1,8 @@
 package practicleweek2;
 
 public abstract class People {
-    String name, profession;
+    String name;
+    String profession;
     int age;
 
     public People(String name, int age, String profession) {
@@ -21,4 +22,5 @@ public abstract class People {
     public int getAge() {
         return age;
     }
+
 }

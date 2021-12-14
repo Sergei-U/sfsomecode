@@ -1,6 +1,5 @@
 package tank;
 
-
 import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
@@ -40,7 +39,7 @@ public class TestTank {
         restoreStreams();
 
         System.out.println("\nThe code for this exercise is:");
-        System.out.println("MY TANK CAN GO ANYWHERE!");
+        System.out.println("THIS IS COOL!");
 
     }
 
@@ -50,31 +49,49 @@ public class TestTank {
     }
 
     public void user(){
-        Tank tank = new Tank();
-        tank.goForward(10);
-        tank.printPosition();
-        tank.turnRight();
-        tank.turnLeft();
-        tank.goForward(50);
-        tank.printPosition();
-        tank.turnRight();
-        tank.turnRight();
-        tank.goBackward(100);
-        tank.printPosition();
+        Tank justTank = new Tank();
+        Tank anywareTank = new Tank(20, -10);
+        Tank customTank = new Tank(20, 30, 150);
+        justTank.goBackward(200);
+        justTank.printPosition();
+        anywareTank.goBackward(-200);
+        anywareTank.printPosition();
+        customTank.goForward(201);
+        customTank.goBackward(201);
+        customTank.printPosition();
     }
 
     public void correct(){
 /////////////////////////////////////////
+
         class Tank {
 
             int x, y;
             int dir;
+            int fuel;
+
+            public Tank() {
+                this(0, 0, 100);
+            }
+
+            public Tank(int x, int y) {
+                this(x, y, 100);
+            }
+
+            public Tank(int x, int y, int fuel) {
+                this.x = x;
+                this.y = y;
+                this.fuel = fuel;
+            }
 
             public void goForward(int i) {
-                if (dir == 0) x += i;
-                else if (dir == 1) y += i;
-                else if (dir == 2) x -= i;
-                else y -= i;
+                if (i < 0 && -i > -fuel)
+                    i = -fuel;
+                else if (i > fuel)
+                    i = fuel;
+                if (dir % 2 == 0) x += i;
+                else y += i;
+                fuel -= Math.abs(i);
             }
 
             public void printPosition() {
@@ -96,16 +113,14 @@ public class TestTank {
             }
         }
 //////////////////////////////////////////////////////
-        Tank tank = new Tank();
-        tank.goForward(10);
-        tank.printPosition();
-        tank.turnRight();
-        tank.turnLeft();
-        tank.goForward(50);
-        tank.printPosition();
-        tank.turnRight();
-        tank.turnRight();
-        tank.goBackward(100);
-        tank.printPosition();
-    }
+        Tank justTank = new Tank();
+        Tank anywareTank = new Tank(20, -10);
+        Tank customTank = new Tank(20, 30, 150);
+        justTank.goBackward(200);
+        justTank.printPosition();
+        anywareTank.goBackward(-200);
+        anywareTank.printPosition();
+        customTank.goForward(201);
+        customTank.goBackward(201);
+        customTank.printPosition();    }
 }
