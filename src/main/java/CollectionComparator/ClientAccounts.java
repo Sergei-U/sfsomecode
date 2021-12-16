@@ -1,4 +1,4 @@
-package main.java.ALXNDR95.Collection;
+package CollectionComparator;
 
 class NewEx extends Exception {
     NewEx(String str) {

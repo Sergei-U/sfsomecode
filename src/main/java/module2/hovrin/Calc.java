@@ -3,7 +3,7 @@ package module2.hovrin;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Calc {
+public class Calc{
     public static Scanner sc = new Scanner(System.in);
     public static int operand1;
     public static char operation;

@@ -1,4 +1,4 @@
-package main.java.ALXNDR95.Collection;
+package CollectionComparator;
 
 import java.util.Comparator;
 
