@@ -34,6 +34,4 @@ public class Human {
         this.address = address;
         this.work = work;
     }
-
-
 }
